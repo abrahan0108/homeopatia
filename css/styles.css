@@ -1,0 +1,7 @@
+:root{
+    --primary-color: blue;
+}
+
+.background{
+    background-image: url(../img/medicine.jpg);
+}
