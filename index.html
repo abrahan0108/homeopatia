@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Meta tags for Bootstrap -->
     <meta charset="UTF-8">
@@ -7,16 +8,46 @@
     <!-- Boottrap-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Homeopatía Integral</title>
 </head>
+
 <body>
     <!-- main container -->
-    <div class="container background">
-        <h1>Hola mundo</h1>
+    <div class="container">
+        
+        <div class="center">
+            <!--Label for title-->
+            <h1 class="h1-main-title">HIPNOTERAPIA INTEGRAL Y DECODIFICACIÓN</h1>
+            <!-- button for trigger login modal-->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">Login</button>
+        </div>
+
+        <!-- modal for login system homeopaty-->
+        <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="login-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="title">Login</h5>
+                        <button aria-hidden="true" class="close" data-dimiss="modal" aria-labelledby="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Hello World!</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary">Sign In</button>
+                        <button class="btn btn-primary">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- JS for Bootstrap -->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
+
 </html>
