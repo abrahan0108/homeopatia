@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for Bootstrap -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- Boottrap-->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Homeopatía Integral</title>
+  </head>
+  <body class="bg-logged">
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-nav">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#homeopathy-menu"
+          aria-controls="homeopathy-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="homeopathy-menu">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="patient.html" class="nav-link"> PACIENTES </a>
+            </li>
+            <li class="nav-item">
+              <a href="remedios.html" class="nav-link"> REMEDIOS </a>
+            </li>
+            <li class="nav-item active">
+              <a href="#" class="nav-link"> SINTOMAS </a>
+            </li>
+            <li class="nav-item">
+              <a href="usuarios.html" class="nav-link"> USUARIOS </a>
+            </li>
+          </ul>
+          <!-- User Area -->
+          <ul class="navbar-nav mr-lg-1">
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fas fa-user"></i> Hola, <span>Admin</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="#" class="dropdown-item"><i class="fas fa-user-edit"></i> Editar Perfil</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Main contain -->
+    <main role="main">
+      <!-- Nice Banner -->
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="display-4">SINTOMAS</h1>
+        </div>
+        </section>
+  
+      <!-- Main Containner -->
+      <div class="container">
+        
+        <!-- Patients table container-->
+        <div class="table-responsive">
+
+          <!-- Button for a new symptom-->
+          <div class="container btn-container">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#newSymptomModal" >
+              <i class="fas fa-user-injured "></i> Sintoma Nuevo 
+            </button>
+            <!-- New Symptom Modal -->
+            <div class="modal fade" id="newSymptomModal" tabindex="-1" aria-labelledby="newSymptomModal" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">  
+                    <p class="text-center">
+                      <h3 class="h-modal">NUEVO SINTOMA</h3>
+                    </p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Form of a new symptom-->
+                    <form action="" method="post">
+                      <h4>Datos del Sintoma</h4>
+                      <div class="form-group">
+                        <label for="inputName">Tipo de Sintoma:*</label>
+                        <input type="text" name="inputNombre" id="inputNombre" class="form-control">
+                      </div>
+
+                      <button class="btn btn-secondary" type="button" data-dismiss="modal"><i class="fa fa-window-close"></i> Cancelar</button>
+                      <button class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Patient table -->
+          <table class="table  table-light">
+            <thead class="thead-dark">
+              <th scope="col">Tipo de Sintoma</th>
+              <th scope="col">Acción</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Sintoma etiológico</th>
+                <td>
+                  <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#newSymptomModal"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Sintoma psiquicos o mentales</th>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Sintoma generales</th>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Sintoma locales</th>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Sintoma claves, peuculiares o raros</th>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Sintoma concomitantes</th>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Sintoma más interrogante</th>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto fixed-bottom">
+      <div class="container">
+        Desarrollado por Abrahán Cortés | Todos los derechos reservados <span>&copy;</span> 2020
+      </div>
+    </footer>
+
+    <!-- JS for Bootstrap -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

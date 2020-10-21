@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for Bootstrap -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- Boottrap-->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Homeopatía Integral</title>
+  </head>
+  <body class="bg-logged">
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-nav">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#homeopathy-menu"
+          aria-controls="homeopathy-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="homeopathy-menu">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link"> PACIENTES </a>
+            </li>
+            <li class="nav-item">
+              <a href="remedios.html" class="nav-link"> REMEDIOS </a>
+            </li>
+            <li class="nav-item">
+              <a href="sintomas.html" class="nav-link"> SINTOMAS </a>
+            </li>
+            <li class="nav-item">
+              <a href="usuarios.html" class="nav-link"> USUARIOS </a>
+            </li>
+          </ul>
+          <!-- User Area -->
+          <ul class="navbar-nav mr-lg-1">
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fas fa-user"></i> Hola, <span>Admin</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="#" class="dropdown-item"><i class="fas fa-user-edit"></i> Editar Perfil</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Main contain -->
+    <main role="main">
+      <!-- Nice Banner -->
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="display-4">PACIENTES</h1>
+        </div>
+        </section>
+  
+      <!-- Main Containner -->
+      <div class="container">
+        
+        <!-- Patients table container-->
+        <div class="table-responsive">
+
+          <!-- Button for a new patient -->
+          <div class="container btn-container">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#newUserModal" >
+              <i class="fas fa-user-plus"></i> Paciente Nuevo
+            </button>
+            <!-- New Patient Modal -->
+            <div class="modal fade" id="newUserModal" tabindex="-1" aria-labelledby="newUserModal" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">  
+                    <p class="text-center">
+                      <h3 class="h-modal">NUEVO PACIENTE</h3>
+                    </p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Form of a new patient-->
+                    <form action="" method="post">
+                      <h4>Datos Personales</h4>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputName">Nombre:*</label>
+                          <input type="text" name="inputNombre" id="inputNombre" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputLastName">Apellidos:*</label>
+                          <input type="text" name="inputApellidos" id="inputApellidos" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputName">Fecha de Nacimiento:*</label>
+                          <input type="date" name="inputFechaNacimiento" id="inputFechaNacimiento" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputLastName">Género:*</label>
+                          <div class="col-md-3 mb-3">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inputGender" id="inputRadioMasculino" value="Masculino">
+                              <label for="inlineMasculino" class="form-check-label">Masculino</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inputGender" id="inputRadioFemenino" value="Femenino">
+                              <label for="inlineFemenino" class="form-check-label">Femenino</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>     
+
+                      <h4>Dirección</h4>
+                      <div class="form-group">
+                        <label for="inputCalle">Calle:*</label>
+                        <input type="text" name="inputCalle" id="inputCalle" class="form-control">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputColonia">Colonia:*</label>
+                          <input type="text" name="inputColonia" id="inputColonia" class="form-control">
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="intputNInt">Número Interior:</label>
+                          <input type="number" name="inputNInt" id="inputNInt" class="form-control">
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="intputNExt">Número Exterior:</label>
+                          <input type="number" name="inputNExt" id="inputNExt" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputMunicipio">Municipio / Alcaldía:</label>
+                          <input type="text" name="inputMunicipio" id="inputMunicipio" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputEstado">Estado:*</label>
+                          <input type="text" name="inputEstado" id="inputEstado" class="form-control">
+                        </div>
+                      </div>
+
+                      <h4>Datos de contacto</h4>
+                      <div class="form-row">
+                        <div class="form-group col-md-3">
+                          <label for="inputTelefono">Telefono:</label>
+                          <input type="tel" name="inputTelefono" id="inputTelefono" class="form-control">
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="inputMovil">Movil:*</label>
+                          <input type="tel" name="inputMovil" id="inputMovil" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail">Email:*</label>
+                          <input type="email" name="inputEmail" id="inputEmail" class="form-control">
+                        </div>
+                      </div>
+                      <button class="btn btn-secondary" type="button" data-dismiss="modal"><i class="fa fa-window-close"></i> Cancelar</button>
+                      <button class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Patient tabe -->
+          <table class="table  table-light">
+            <thead class="thead-dark">
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellidos</th>
+              <th scope="col">Teléfono</th>
+              <th scope="col">Email</th>
+              <th scope="col">Última cita</th>
+              <th scope="col">Acción</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Abrahan</th>
+                <td>Cortés</td>
+                <td>55-1147-8129</td>
+                <td>f8abrahan@gmail.com</td>
+                <td>16/10/2020</td>
+                <td>
+                  <a href="history.html">
+                    <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  </a>
+                  <a href="#">
+                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Abrahan</th>
+                <td>Cortés</td>
+                <td>55-1147-8129</td>
+                <td>f8abrahan@gmail.com</td>
+                <td>16/10/2020</td>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Abrahan</th>
+                <td>Cortés</td>
+                <td>55-1147-8129</td>
+                <td>f8abrahan@gmail.com</td>
+                <td>16/10/2020</td>
+                <td>
+                  <a href="history.html">
+                    <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  </a>
+                  <a href="http://">
+                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Abrahan</th>
+                <td>Cortés</td>
+                <td>55-1147-8129</td>
+                <td>f8abrahan@gmail.com</td>
+                <td>16/10/2020</td>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Abrahan</th>
+                <td>Cortés</td>
+                <td>55-1147-8129</td>
+                <td>f8abrahan@gmail.com</td>
+                <td>16/10/2020</td>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Abrahan</th>
+                <td>Cortés</td>
+                <td>55-1147-8129</td>
+                <td>f8abrahan@gmail.com</td>
+                <td>16/10/2020</td>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Abrahan</th>
+                <td>Cortés</td>
+                <td>55-1147-8129</td>
+                <td>f8abrahan@gmail.com</td>
+                <td>16/10/2020</td>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Abrahan</th>
+                <td>Cortés</td>
+                <td>55-1147-8129</td>
+                <td>f8abrahan@gmail.com</td>
+                <td>16/10/2020</td>
+                <td>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-file-alt"></i></button>
+                  <button class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto fixed-bottom">
+      <div class="container">
+        Desarrollado por Abrahán Cortés | Todos los derechos reservados <span>&copy;</span> 2020
+      </div>
+    </footer>
+
+    <!-- JS for Bootstrap -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

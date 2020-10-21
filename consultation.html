@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for Bootstrap -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- Boottrap-->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Homeopatía Integral</title>
+  </head>
+  <body class="bg-logged">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-nav">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#homeopathy-menu"
+        aria-controls="homeopathy-menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="homeopathy-menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="#" class="nav-link"> PACIENTES </a>
+          </li>
+          <li class="nav-item">
+            <a href="remedios.html" class="nav-link"> REMEDIOS </a>
+          </li>
+          <li class="nav-item">
+            <a href="sintomas.html" class="nav-link"> SINTOMAS </a>
+          </li>
+          <li class="nav-item">
+            <a href="usuarios.html" class="nav-link"> USUARIOS </a>
+          </li>
+        </ul>
+        <!-- User Area -->
+        <ul class="navbar-nav mr-lg-1">
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user"></i> Hola, <span>Admin</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="#" class="dropdown-item"
+                ><i class="fas fa-user-edit"></i> Editar Perfil</a
+              >
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item"
+                ><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main contain -->
+    <main role="main">
+      <!-- Nice Banner -->
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="display-4">ABRAHÁN CORTÉS</h1>
+          <h3 class="display-6 shH3">CONSULTA</h3>
+        </div>
+      </section>
+
+      <!-- Main Containner Consultation -->
+      <div class="container c-consultation">
+        <form action="#" method="post">
+
+          <h4>Consulta</h4>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputFecha">Fecha</label>
+              <input type="date" name="inputFecha" id="inputFecha" class="form-control">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="inputFecha">Tipo</label>
+              <select name="inputTipo" id="inputTipo" class="form-control">
+                <option value="seguimiento">Seguimiento</option>
+                <option value="diagnostico">Diagnóstico</option>
+              </select>
+            </div>
+          </div>
+
+          <h4>Signos Vitales</h4>
+          <div class="row">
+            <div class="form-group col-md-3">
+              <label for="inputTemperatura">Temperatura</label>
+              <input type="text" name="inputTemperatura" id="inputTemperatura" class="form-control">
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="inputPresion">Presión Arterial</label>
+              <input type="text" name="inputPresion" id="inputPresion" class="form-control">
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="inputPulso">Pulso Cardiaco</label>
+              <input type="text" name="inputPulso" id="inputPulso" class="form-control">
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="inputTemperatura">Frecuencia Respiratoria</label>
+              <input type="text" name="inputFrecuencia" id="inputFrecuencia" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputPadecimiento">Padecimiento</label>
+            <textarea class="form-control" id="inputPadecimiento" rows="3"></textarea>
+          </div>
+          
+          <div class="row justify-content-between">
+            <div class="col-auto mr-auto">
+              <h4>Repertorización</h4>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-primary">Agregar Rubros</button>
+            </div>
+          </div>
+
+          <div class="contain c-table">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Acciones</th>
+                  <th>Rubros</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">XXXXX</th>
+                  <th>XXXXX</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row">
+            <div class="col-auto ml-auto">
+              <button type="button" class="btn btn-primary">Generar Repertorización</button>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="selectTratamiento">Tratamiento</label>
+              <select name="inputTratamiento" id="inputTratamiento" class="form-control">
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option>
+                <option value="opcion4">Opción 4</option>
+                <option value="opcion5">Opción 5</option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="inputPotencia">Potencia</label>
+              <input type="text" name="inputPotencia" id="inputPotencia" class="form-control">
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="inputPCita">Próxima Cita</label>
+              <input type="date" name="inputPCita" id="inputPCita" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputIndicaciones">Indicaciones</label>
+            <textarea class="form-control" id="inputIndicaciones" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Guardar</button>
+
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto fixed-bottom">
+      <div class="container">
+        Desarrollado por Abrahán Cortés | Todos los derechos reservados
+        <span>&copy;</span> 2020
+      </div>
+    </footer>
+
+    <!-- JS for Bootstrap -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

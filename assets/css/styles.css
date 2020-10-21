@@ -1,0 +1,164 @@
+:root {
+  --primary-color: #cdb30c;
+  --secondary-color: #62760c;
+  --terciary-color: #535204;
+  --fourth-color: #523906;
+  --complementary-first: #fff;
+  --complementary-second: #1b1c25;
+  --main-background: #EAE9E0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+h1, h3{
+  color: var(--complementary-first);
+}
+
+.h-modal{
+  color: var(--complementary-second);
+}
+
+/* h3 { */
+  /* color: var(--complementary-first); */
+/* } */
+
+footer{
+  background-color: #151501;
+  color: var(--complementary-first);
+  text-align: center;
+}
+
+.bg-logged {
+  background-color: var(--main-background);
+}
+
+.bg-nav {
+  background-color: var(--terciary-color);
+}
+
+.bg-image {
+  /* padding: 50px 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+  min-height: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(205, 179, 12, 0.5)
+    ),
+    url("../img/pills.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2em 2em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0.1em 2em;
+  transition: 0.3s;
+}
+
+.landing-button:hover {
+  background-color: var(--fourth-color);
+}
+
+.btn-container{
+  background-color: #EAE9E0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.h1-main-title {
+  height: 2.5em;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px var(--fourth-color);
+  color: var(--complementary-first);
+  margin-bottom: 1em;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-h-login {
+  height: 8rem;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/keys.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+
+.modal-title {
+  color: var(--complementary-first);
+  font-size: 2em;
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  text-align: center;
+}
+
+.c-login {
+  color: var(--complementary-first);
+}
+
+.user-management {
+  color: var(--complementary-first);
+}
+
+.nav-h {
+  height: fit-content;
+  box-shadow: 0 1rem 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.jumbotron {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.1)),
+    url("../img/check-in.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+}
+
+.table-responsive{
+  margin-bottom: 3rem;
+}
+
+.data-patient{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.c-consultation{
+  background-color: var(--complementary-first);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.c-table{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
