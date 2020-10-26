@@ -1,0 +1,10 @@
+# Activar el rewrite
+<IfModule mod_rewrite.c>
+RewriteEngine on
+ErrorDocument 404 http://localhost/homeopatia/error/
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+</IfModule>
